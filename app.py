@@ -3,8 +3,8 @@ import joblib
 
 app = Flask(__name__)
 
-regr_model = joblib.load('../notebooks/linear_regr.pkl')
-tree_model = joblib.load('../notebooks/tree.pkl')
+regr_model = joblib.load('./notebooks/linear_regr.pkl')
+tree_model = joblib.load('./notebooks/tree.pkl')
 
 @app.route('/', methods=('GET', 'POST'))
 def index():
